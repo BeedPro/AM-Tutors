@@ -1,0 +1,59 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% block extra_head_content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/base.css' %}">
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+
+    <title>AM-Tutors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <div class="topnav" id="myTopnav">
+            <a href="../" class="logo">LOGO</a>
+            <div class="menu">
+                <a href="/about">About Us</a>
+                <a href="/tuition">Tuition</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/contacts">Contacts</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        {% block header %}
+        <header>
+            {{ title|default:"TITLE" }}
+        </header>
+        {% endblock header %}
+        {% block content %}
+
+        {% endblock  %}
+
+    </main> 
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col"><a href="/about" class="text-secondary">About us</a> | <a href="/tuition" class="text-secondary">Tuition</a> |  <a href="/reviews" class="text-secondary">Reviews</a> | <a href="/pricing" class="text-secondary">Pricing</a> | <a href="/contacts" class="text-secondary">Contacts</a>
+            <div class="col">
+                <p>&copy; 2023 AM Tutors.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{% static '/js/base.js' %}"></script>
+
+</html>
