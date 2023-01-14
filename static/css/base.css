@@ -12,6 +12,9 @@
     --secondary-divider: #6c7268;
 }
 
+*{
+    font-family: Syne, sans-serif;
+}
 
 /* main > .container {
     padding: 60px 15px 0;
@@ -155,4 +158,3 @@ a:active {
     color:var(--font-on-dark);
     text-decoration: none;
 }
-
