@@ -55,8 +55,13 @@
 }
 
 .page-heading{
+    font-size: 36px;
     background-color: var(--heading-color); 
     color: var(--font-on-dark);
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .body-bg-color{
