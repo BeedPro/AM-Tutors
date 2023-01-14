@@ -1,14 +1,179 @@
 {% extends 'base.html' %}
-
+{%load static%}
 {% block content %}
 
+<section class="hero-background pb-5 pt-5 text-center text-secondary ">
+    <div class="container pb-5 pt-5">
+        <div class="pb-5 pt-5 row">
+            <div class="col-lg-9 col-xl-8 ms-auto me-auto pb-5 pt-5">
+                <h1 class="display-4 fw-bold mb-3 text-white">Accelerate learning with one-to-one private
+tuition&nbsp;</h1>
+                <p class="text-on-dark lead mb-4">Boost those grades with us!</p>
+                <a href="#" class="btn btn-primary pe-3 ps-3">Book now</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="container-fluid fill-homepage">
+<section class="pb-5 pt-5"> 
+    <div class="container pb-5 pt-5"> 
+        <div class="align-items-center mb-3 row"> 
+            <div class="col-lg-7"> 
+                <h2 class="h6 mb-1">Tuition</h2> 
+                <h3 class="fw-bold h2 mb-1">The subjects we tutor</h3>
+                <p class="fw-light">Below are the subjects we teach </p> 
+            </div>                         
+        </div>         
+        <div class="row"> 
+            <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                <div class="btn-secondary pb-5 ps-4 pe-4 pt-5 shadow"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                        <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"></path>                         
+                    </svg>         
+                    <h4 class="fw-bold h5">GCSE</h4> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p><a href="/gcse" class="text-white-50">Learn More</a> 
+                </div>
+            </div>             
+            <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                <div class="btn-secondary mb-sm-n5 mt-sm-5 pb-5 ps-4 pe-4 pt-5 shadow"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                        <path d="M5.636 12.707l1.828 1.829L8.88 13.12 7.05 11.293l1.414-1.414 1.829 1.828 1.414-1.414L9.88 8.464l1.414-1.414L13.12 8.88l1.415-1.415-1.829-1.828 2.829-2.828a1 1 0 0 1 1.414 0l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414l2.828-2.829zm8.485 5.656l4.243-4.242L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 5.636 9.878z"></path>                         
+                    </svg>                     
+                    <h4 class="fw-bold h5">A-Level</h4> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p><a href="/alevel" class="text-white-50">Learn More</a> 
+                </div>                 
+            </div>             
+            <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                <div class="btn-secondary pb-5 ps-4 pe-4 pt-5 shadow"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                        <path d="M15 21h-2v-3h-2v3H9v-2H7v2H4a1 1 0 0 1-1-1v-3h2v-2H3v-2h3v-2H3V9h2V7H3V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-3v-2h-2v2z"></path>                         
+                    </svg>                     
+                    <h4 class="fw-bold h5">STEP</h4> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p><a href="/step" class="text-white-50">Learn More</a> 
+                </div>                 
+            </div>             
+            <div class="col-sm-6 col-xl-3 pb-3 pt-3"> 
+                <div class="btn-secondary mt-sm-5 pb-5 ps-4 pe-4 pt-5 shadow"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="mb-3"> 
+                        <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.464 12.536L20 12l-3.536-3.536L15.05 9.88 17.172 12l-2.122 2.121 1.414 1.415zM6.828 12L8.95 9.879 7.536 8.464 4 12l3.536 3.536L8.95 14.12 6.828 12zm4.416 5l3.64-10h-2.128l-3.64 10h2.128z"></path>                         
+                    </svg>              
+                    <h4 class="fw-bold h5">Programming</h4> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p><a href="/programming" class="text-white-50">Learn More</a> 
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</section>
+
+<section class="bg-dark pb-5 pt-5 text-center text-lg-start"> 
+    <div class="container pb-4 pt-4"> 
+        <div class="align-items-center g-0 row"> 
+            <div class="col-lg-6 text-center"> 
+                <img src="{% static '/img/am-1.png' %}" class="img-fluid small-about-us-pic" alt="..." width="540" height="360"> 
+            </div>             
+            <div class="col-lg-6 pb-3 ps-5 pe-5 pt-3"> 
+                <div class="pb-3 pt-3"> 
+                    <h3 class="fw-bold h5">Annoor Mustafi</h3> 
+                    <p>Hey, my name is <strong>Annoor Mustafi</strong> and I am currently studying <em>Mathematics</em> at the University of Cambridge. I have always had a passion for <em>mathematics and computer science</em>, and it is with <strong>great pride</strong> that I can say I have achieved <strong>three A*s</strong> in <em>Computer Science, Further Mathematics, and Mathematics</em>. Additionally, I have also <strong>excelled</strong> in the <strong>STEP II and STEP III exams</strong>, which further <strong>solidified</strong> my love for the subject.</p>
+                </div>                 
+            </div>             
+        </div>         
+        <div class="align-items-center g-0 row text-center"> 
+            <div class="col-lg-6 order-lg-2"> 
+                <img src="{% static '/img/am-2.jpg' %}" class="img-fluid small-about-us-pic" alt="..." width="540" height="360"> 
+            </div>             
+            <div class="col-lg-6 order-lg-1 pb-3 ps-5 pe-5 pt-3"> 
+                <div class="pb-3 pt-3"> 
+                    <h3 class="fw-bold h5">Abdullah Muzahir</h3> 
+                    <p>Hello, my name is <strong>Abdullah Muzahir</strong> and I am currently studying <em>Computer Science</em> at the University of Cambridge. I have always been <strong>fascinated</strong> by the <strong>power and potential of technology</strong>, and I am <strong>thrilled</strong> to be pursuing my passion for computer science at one of the world's most prestigious universities.</p>
+                </div>                 
+            </div>             
+        </div>         
+        <div class="align-items-center g-0 row text-center"> 
+            <div class="col-lg-6"> 
+                <img src="{% static '/img/ta-1.jpeg' %}" class="img-fluid small-about-us-pic" alt="..." width="540" height="360"> 
+            </div>             
+            <div class="col-lg-6 pb-3 ps-5 pe-5 pt-3"> 
+                <div class="pb-3 pt-3"> 
+                    <h3 class="fw-bold h5">Tariq Aziz</h3> 
+                    <p>Hello, my name is <strong>Tariq Aziz</strong> and I am currently studying <em>Economics</em> at <strong>Cambridge University</strong>. I have a passion for academics and have achieved great success in my studies, earning <strong>2 A*s</strong>, an <strong>A in Maths</strong>, and an <strong>A in Further Maths and Economics</strong>.</p>
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</section>
+
+<section class="quotes-bg pb-5 pt-5 text-center text-white"> 
+    <div class="container pb-3 pt-3"> 
+        <div class="row"> 
+            <div class="col-lg-8 ms-auto me-auto"> 
+                <div id="carousel3" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner"> 
+                        <div class="carousel-item active"> 
+                            <svg viewBox="0 0 24 24" fill="currentColor" height="80" width="80" class="mb-3 text-light"> 
+                                <path d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z"/> 
+                            </svg>
+                            <h2 class="mb-3">It's so easy to create a professional website at a fraction of the cost.</h2>
+                            <div> <span>I.P Freely - </span> <span class="text-light">ACME Gizmo LLC</span> 
+                            </div>                             
+                        </div>                         
+                        <div class="carousel-item"> 
+                            <svg viewBox="0 0 24 24" fill="currentColor" height="80" width="80" class="mb-3 text-white"> 
+                                <path d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z"/> 
+                            </svg>
+                            <h2 class="mb-3">Turn hundreds of framework classes into powerful visual controls. Use the complete library of ready-to-use components and work with dynamic components.</h2>
+                            <div> <span>I.P Freely - </span> <span>ACME Gizmo LLC</span> 
+                            </div>                             
+                        </div>                         
+                        <div class="carousel-item"> 
+                            <svg viewBox="0 0 24 24" fill="currentColor" height="80" width="80" class="mb-3 text-white"> 
+                                <path d="M23 1V5.06504C21.9136 5.67931 21.0807 6.43812 20.5012 7.34146C19.958 8.24481 19.5416 9.20235 19.2519 10.2141C18.9621 11.2258 18.8173 12.346 18.8173 13.5745H23V22.4634H14.0914V16.935C14.0914 13.6107 14.3992 11.0813 15.0148 9.34688C15.6667 7.61246 16.6444 6.02258 17.9481 4.57723C19.2519 3.09575 20.9358 1.90334 23 1ZM9.90864 1V5.06504C8.82222 5.67931 7.9893 6.43812 7.40988 7.34146C6.83045 8.24481 6.39588 9.20235 6.10617 10.2141C5.81646 11.2258 5.67161 12.346 5.67161 13.5745H9.90864V22.4634H1V16.935C1 13.6107 1.30782 11.0813 1.92346 9.34688C2.57531 7.61246 3.55309 6.02258 4.85679 4.57723C6.16049 3.09575 7.84444 1.90334 9.90864 1Z"/> 
+                            </svg>
+                            <h2 class="mb-3">Quickly build the layout of your webpage with powerful visual tools for adding, editing, moving, cloning and deleting HTML elements. Insert multiple elements with repeater and modify the layout of all selected elements with one move.</h2>
+                            <div> <span>I.P Freely - </span> <span>ACME Gizmo LLC</span> 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <ol class="carousel-indicators mt-5 position-relative"> 
+                        <li data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></li>                         
+                        <li data-bs-target="#carousel3" data-bs-slide-to="1" href="#carousel3"></li>                         
+                        <li data-bs-target="#carousel3" data-bs-slide-to="2"></li>                         
+                    </ol>                     <a class="carousel-control-prev" href="#carousel3" role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </a> <a class="carousel-control-next" href="#carousel3" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </a> 
+                </div>                 
+            </div>             
+        </div>         
+    </div>     
+</section>
+
+<section class="contact-us-bg pb-5 pt-5 text-center"> 
+    <div class="container pb-4 pt-4"> 
+        <div class="row"> 
+            <div class="col-lg-8 ms-auto me-auto py-3"> 
+                <h2 class="fw-bold text-uppercase">Send Us A message</h2> 
+                <p class="mb-5 text-white">     Ask us anything or just say hi.....</p>
+                <form> 
+                    <div class="mb-3"> 
+                        <input type="text" class="border border-0 form-control rounded-0" placeholder="Enter name..."> 
+                    </div>                     
+                    <div class="mb-3"> 
+                        <input type="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."> 
+                    </div>                     
+                    <div class="mb-3"> 
+                        <textarea class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
+                    </div>                     
+                    <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>                     
+                </form>                 
+            </div>             
+        </div>         
+    </div>     
+</section>
+
+{% comment %} <div class="container-fluid fill-homepage">
 	<div class="row">
 		<div class="col-md-12">
 
 		</div>
 	</div>
-</div>
+</div> {% endcomment %}
 
 {% endblock content %}

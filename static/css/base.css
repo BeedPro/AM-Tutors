@@ -6,7 +6,8 @@
     --navbar-footer-color: #022d3c;
     --font-on-dark: white;
     --heading-color: #253240;
-    --button-color: #0d3c59;
+    --second-color: #0d3c59;
+    --button-dark-color: #06213f;
     --quote-color: #732a47;
     --secondary-divider: #6c7268;
 }
@@ -15,6 +16,19 @@
 /* main > .container {
     padding: 60px 15px 0;
   } */
+
+.contact-us-bg{
+    background-color: var(--second-color);
+    color: var(--font-on-dark);
+}
+
+.hero-background{
+    background-color: var(--second-color);
+}
+
+.text-on-dark{
+    color: var(--font-on-dark);
+}
 
 .container-pad{
     padding: 60px 15px 0;
@@ -74,6 +88,10 @@ padding-left: 40px;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+.quotes-bg{
+    background-color: var(--quote-color);
+    color: var(--font-on-dark);
+}
 
 .navbar-hidden {
     visibility: hidden;
@@ -90,6 +108,11 @@ padding-left: 40px;
     border-radius: 5%;
 }
 
+.small-about-us-pic{
+    height: 300px; 
+    width: 300px;
+    border-radius: 5%;
+}
 .pad-top-30{
     padding-top: 30px;
 }
