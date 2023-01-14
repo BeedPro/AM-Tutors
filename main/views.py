@@ -4,7 +4,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, "home.html", {})
+    is_home_page = request.path == '/'
+    return render(request, "home.html", {"title" : "Home page", 'is_home_page': is_home_page})
 
 def about(request):
     return render(request, "about.html", {"title": "About Us"})

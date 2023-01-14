@@ -17,18 +17,18 @@
 </head>
 
 <header>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-md fixed-top nav-footer-color">
-            <a href="/" class="text-light padding-left-10">
-                <a href="/"><img  class="nav-logo" src="https://media.istockphoto.com/id/1205507976/vector/graduate-cap-logo-university-mortarboard.jpg?s=612x612&w=0&k=20&c=X_WSdETOyZPl9KeYSdYCYCltoS7cYwUtQHM6hbj_QqQ="></a>
-                <a class="navbar-brand nav-logo-text text-light" href="/" >AM-TUTORS</a>
+    <nav class="navbar navbar-dark navbar-expand-md  nav-footer-color">
+        <div class="container-fluid">
+            <a href="/" class="text-light navbar-brand nav-logo-text text-light ">
+                <img  class="nav-logo" src="https://media.istockphoto.com/id/1205507976/vector/graduate-cap-logo-university-mortarboard.jpg?s=612x612&w=0&k=20&c=X_WSdETOyZPl9KeYSdYCYCltoS7cYwUtQHM6hbj_QqQ=">
+                AM-TUTORS
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item active">
+                <ul class="navbar-nav  ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
                         <a class="nav-link nav-link-color" aria-current="page" href="/about">About</a>
                     </li>
                     <li class="nav-item">
@@ -45,26 +45,27 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
 <body class="d-flex flex-column h-100 body-bg-color">
     <!-- Begin page content -->
     <main >
+        {% if not is_home_page %}
         <div class="container-fluid page-heading container-pad">
             <div class="row">
                 <div class="col" >
-                        {{ title|default:"TITLE" }}
+                    {{ title|default:"TITLE" }}
                 </div>
             </div>
         </div>
+        {% endif %}
         {% block content %}
     
         {% endblock  %}
     </main>
 </body>
-
-<footer class="footer mt-auto py-3 fixed-bottom nav-footer-color">
+<footer class="footer mt-auto py-3 nav-footer-color">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
