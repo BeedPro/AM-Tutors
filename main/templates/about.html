@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class="container">
+{% comment %} <div class="container">
 	<div class="row pad-top-30">
 		<div class="col-md-3">
             <div class="text-center padding-top-20">
@@ -11,32 +11,20 @@
             </div>
 		</div>
 		<div class="col-md-9">
-			<p>
-				Hey, my name is Annoor Mustafi and I am currently studying Mathematics at the University of Cambridge. I have always had a passion for mathematics and computer science, and it is with great pride that I can say I have achieved three A*s in Computer Science, Further Mathematics, and Mathematics. Additionally, I have also excelled in the STEP II and STEP III exams, which further solidified my love for the subject.
-
-Tutoring has always been a passion of mine and I find great joy in helping others succeed. I have experience in tutoring students of all levels and I pride myself on being able to explain complex mathematical concepts in a clear and concise manner. My patience and understanding make me an excellent teacher, and my students have consistently praised me for my ability to help them achieve their goals.
-
-At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the Mathematics Society and the Computer Science Society, where I participate in various events and activities that promote the study of mathematics and computer science.
-
-In my free time, I enjoy reading and playing chess. I am also a passionate cook and enjoy experimenting with different cuisines. I am a dedicated student and teacher, and I am committed to helping others achieve their goals.
-			</p>
+            <p>Hey, my name is <strong>Annoor Mustafi</strong> and I am currently studying <em>Mathematics</em> at the University of Cambridge. I have always had a passion for <em>mathematics and computer science</em>, and it is with <strong>great pride</strong> that I can say I have achieved <strong>three A*s</strong> in <em>Computer Science, Further Mathematics, and Mathematics</em>. Additionally, I have also <strong>excelled</strong> in the <strong>STEP II and STEP III exams</strong>, which further <strong>solidified</strong> my love for the subject.</p>
+            <p>Tutoring has always been a <strong>passion</strong> of mine and I find <strong>great joy</strong> in helping others succeed. I have experience in tutoring students of all levels and I <strong>pride myself</strong> on being able to explain <strong>complex mathematical concepts</strong> in a <strong>clear and concise manner</strong>. My <strong>patience and understanding</strong> make me an <strong>excellent teacher</strong>, and my students have consistently praised me for my ability to help them achieve their goals.</p>
+            <p>At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the <em>Mathematics Society</em> and the <em>Computer Science Society</em>, where I participate in various events and activities that promote the study of mathematics and computer science.</p>
+            <p>In my free time, I enjoy <strong>reading and playing chess</strong>. I am also a <strong>passionate cook</strong> and enjoy <strong>experimenting with different cuisines</strong>. I am a <strong>dedicated student and teacher</strong>, and I am <strong>committed to helping others achieve their goals</strong>.</p>
 		</div>
 	</div>
 	<div class="row pad-top-30 pad-bottom-10">
 		<div class="col-md-9">
-			<p>
-				Hello, my name is Abdullah Muzahir and I am currently studying Computer Science at the University of Cambridge. I have always been fascinated by the power and potential of technology, and I am thrilled to be pursuing my passion for computer science at one of the world's most prestigious universities.
-
-Coding has been a hobby of mine for many years and I enjoy experimenting with different programming languages and frameworks. I have experience in multiple programming languages such as C++, Python, Java, and JavaScript.
-
-Additionally, I am also a dedicated and experienced tutor. I have a passion for teaching and I love to help others succeed in computer science. I am able to explain complex computer science concepts in a clear and concise manner, making them accessible to students of all levels. My patience and understanding make me an excellent teacher, and I have a proven track record of helping students achieve their goals.
-
-At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the Computer Science Society, where I participate in various events and activities that promote the study of computer science.
-
-In my free time, I enjoy experimenting with new technologies and tinkering with different projects. I am also a huge fan of video games and enjoy playing games on my spare time.
-
-As a student of Computer Science, I am always eager to learn and improve my skills. I am dedicated and hardworking, and I look forward to a future career in the field of computer science and tutoring.
-			</p>
+            <p>Hello, my name is <strong>Abdullah Muzahir</strong> and I am currently studying <em>Computer Science</em> at the University of Cambridge. I have always been <strong>fascinated</strong> by the <strong>power and potential of technology</strong>, and I am <strong>thrilled</strong> to be pursuing my passion for computer science at one of the world's most prestigious universities.</p>
+            <p>Coding has been a <strong>hobby</strong> of mine for many years and I enjoy <strong>experimenting</strong> with different <em>programming languages and frameworks</em>. I have experience in <strong>multiple programming languages</strong> such as <em>C++, Python, Java, and JavaScript</em>.</p>
+            <p>Additionally, I am also a <strong>dedicated and experienced tutor</strong>. I have a <strong>passion for teaching</strong> and I <strong>love to help others succeed</strong> in computer science. I am able to explain <strong>complex computer science concepts</strong> in a <strong>clear and concise manner</strong>, making them accessible to students of all levels. My <strong>patience and understanding</strong> make me an <strong>excellent teacher</strong>, and I have a <strong>proven track record</strong> of helping students achieve their goals.</p>
+            <p>At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the <em>Computer Science Society</em>, where I participate in various events and activities that promote the study of computer science.</p>
+            <p>In my free time, I enjoy <strong>experimenting with new technologies</strong> and <strong>tinkering with different projects</strong>. I am also a huge fan of <strong>video games</strong> and enjoy <strong>playing games on my spare time</strong>.</p>
+            <p>As a student of Computer Science, I am always <strong>eager to learn and improve my skills</strong>. I am <strong>dedicated and hardworking</strong>, and I look forward to a future career in the field of computer science and <strong>tutoring</strong>.</p>
 		</div>
 		<div class="col-md-3">
             <div class="text-center padding-top-20">
@@ -44,7 +32,52 @@ As a student of Computer Science, I am always eager to learn and improve my skil
             </div>
 		</div>
 	</div>
-</div>
+</div> {% endcomment %}
+
+<div class="container pb-4 pt-4"> 
+    <div class="align-items-center row"> 
+        <div class="col-lg-6 pb-3 pt-3 text-center"> 
+            <img src="{% static '/img/am-1.png' %}" class="img-fluid about-us-pic" alt="..." width="540" height="360"> 
+        </div>         
+        <div class="col-lg-6 pb-3 pt-3"> 
+            <div class="pb-3 pt-3"> 
+                <h3 class="fw-bold h5">Annoor Mustafi</h3> 
+                <p>Hey, my name is <strong>Annoor Mustafi</strong> and I am currently studying <em>Mathematics</em> at the University of Cambridge. I have always had a passion for <em>mathematics and computer science</em>, and it is with <strong>great pride</strong> that I can say I have achieved <strong>three A*s</strong> in <em>Computer Science, Further Mathematics, and Mathematics</em>. Additionally, I have also <strong>excelled</strong> in the <strong>STEP II and STEP III exams</strong>, which further <strong>solidified</strong> my love for the subject.</p>
+                <p>Tutoring has always been a <strong>passion</strong> of mine and I find <strong>great joy</strong> in helping others succeed. I have experience in tutoring students of all levels and I <strong>pride myself</strong> on being able to explain <strong>complex mathematical concepts</strong> in a <strong>clear and concise manner</strong>. My <strong>patience and understanding</strong> make me an <strong>excellent teacher</strong>, and my students have consistently praised me for my ability to help them achieve their goals.</p>
+                <p>At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the <em>Mathematics Society</em> and the <em>Computer Science Society</em>, where I participate in various events and activities that promote the study of mathematics and computer science.</p>
+                <p>In my free time, I enjoy <strong>reading and playing chess</strong>. I am also a <strong>passionate cook</strong> and enjoy <strong>experimenting with different cuisines</strong>. I am a <strong>dedicated student and teacher</strong>, and I am <strong>committed to helping others achieve their goals</strong>.</p>
+            </div>             
+        </div>         
+    </div>     
+    <div class="align-items-center row"> 
+        <div class="col-lg-6 order-lg-2 pb-3 pt-3 text-center"> 
+            <img src="{% static '/img/am-2.jpg' %}" class="img-fluid about-us-pic" alt="..." width="540" height="360"> 
+        </div>         
+        <div class="col-lg-6 order-lg-1 pb-3 pt-3"> 
+            <div class="pb-3 pt-3"> 
+                <h3 class="fw-bold h5">Abdullah Muzahir </h3> 
+                <p>Hello, my name is <strong>Abdullah Muzahir</strong> and I am currently studying <em>Computer Science</em> at the University of Cambridge. I have always been <strong>fascinated</strong> by the <strong>power and potential of technology</strong>, and I am <strong>thrilled</strong> to be pursuing my passion for computer science at one of the world's most prestigious universities.</p>
+                <p>Coding has been a <strong>hobby</strong> of mine for many years and I enjoy <strong>experimenting</strong> with different <em>programming languages and frameworks</em>. I have experience in <strong>multiple programming languages</strong> such as <em>C++, Python, Java, and JavaScript</em>.</p>
+                <p>Additionally, I am also a <strong>dedicated and experienced tutor</strong>. I have a <strong>passion for teaching</strong> and I <strong>love to help others succeed</strong> in computer science. I am able to explain <strong>complex computer science concepts</strong> in a <strong>clear and concise manner</strong>, making them accessible to students of all levels. My <strong>patience and understanding</strong> make me an <strong>excellent teacher</strong>, and I have a <strong>proven track record</strong> of helping students achieve their goals.</p>
+                <p>At Cambridge, I am actively involved in various student organizations and clubs. I am a member of the <em>Computer Science Society</em>, where I participate in various events and activities that promote the study of computer science.</p>
+                <p>In my free time, I enjoy <strong>experimenting with new technologies</strong> and <strong>tinkering with different projects</strong>. I am also a huge fan of <strong>video games</strong> and enjoy <strong>playing games on my spare time</strong>.</p>
+                <p>As a student of Computer Science, I am always <strong>eager to learn and improve my skills</strong>. I am <strong>dedicated and hardworking</strong>, and I look forward to a future career in the field of computer science and <strong>tutoring</strong>.</p>
+                </div>             
+        </div>         
+    </div>     
+
+    {% comment %} <div class="align-items-center row"> 
+        <div class="col-lg-6 pb-3 pt-3 text-center"> 
+            <img src="{% static '/img/ta-1.png' %}" class="img-fluid about-us-pic" alt="..." width="540" height="360"> 
+        </div>         
+        <div class="col-lg-6 pb-3 pt-3"> 
+            <div class="pb-3 pt-3"> 
+                <h3 class="fw-bold h5">Tariq Aziz</h3> 
+                <p>Hello, my name is <strong>Tariq Aziz</strong> and I am currently studying <em>Economics</em> at <strong>Cambridge University</strong>. I have a passion for academics and have achieved great success in my studies, earning <strong>2 A*s</strong>, an <strong>A in Maths</strong>, and an <strong>A in Further Maths and Economics</strong>.</p>
+<p>But my passion doesn't stop there, as I also <em>love to share my knowledge and assist others</em> in their academic journey. I have <em>experience tutoring students</em> and have even helped someone <em>improve from a C to an A* in A level Maths</em>. I believe that with <em>dedication and the right guidance, anyone can achieve their goals</em>. If you're looking for a tutor who is dedicated and can help you succeed, please <strong>reach out to me</strong>.</p>            </div>             
+        </div>         
+    </div>     
+</div> {% endcomment %}
 
 <!--Padding to bottom-->
 <div style="padding-bottom: 27px;"></div>

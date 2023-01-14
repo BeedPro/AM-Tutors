@@ -36,8 +36,6 @@
     color:var(--font-on-dark) !important;
 }
 
-
-
 .nav-footer-color {
     color: var(--font-on-dark);
     background-color: var(--navbar-footer-color);
@@ -87,8 +85,9 @@ padding-left: 40px;
 }
 
 .about-us-pic{
-    height: 200px; 
-    width: 200px;
+    height: 400px; 
+    width: 400px;
+    border-radius: 5%;
 }
 
 .pad-top-30{
