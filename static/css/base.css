@@ -46,6 +46,14 @@
     border-radius: 50%;
 }
 
+.nav-logo-text{
+    padding-left: 10px;
+}
+
+.padding-left-10{
+    padding-left: 10px;
+}
+
 .page-heading{
     background-color: var(--heading-color); 
     color: var(--font-on-dark);
