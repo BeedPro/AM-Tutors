@@ -21,3 +21,15 @@ def pricing(request):
 
 def contacts(request):
     return render(request, "contacts.html", {"title": "Contacts"})
+
+def gcse(request):
+    return render(request, "gcse.html", {"title": "GCSE"})
+
+def alevel(request):
+    return render(request, "alevel.html", {"title": "A-Levels"})
+
+def step(request):
+    return render(request, "step.html", {"title": "STEP"})
+
+def programming(request):
+    return render(request, "programming.html", {"title": "Programming"})
