@@ -51,13 +51,15 @@
 <body class="d-flex flex-column h-100 body-bg-color">
     <!-- Begin page content -->
     <main >
+        {% if not is_home_page %}
         <div class="container-fluid page-heading container-pad">
             <div class="row">
                 <div class="col" >
-                        {{ title|default:"TITLE" }}
+                    {{ title|default:"TITLE" }}
                 </div>
             </div>
         </div>
+        {% endif %}
         {% block content %}
     
         {% endblock  %}

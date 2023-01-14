@@ -52,6 +52,9 @@
 padding-left: 40px;
 }
 
+.navbar .navbar-dark{
+    background-color: var(--navbar-footer-color);
+}
 
 .nav-logo-text{
     padding-left: 10px;
