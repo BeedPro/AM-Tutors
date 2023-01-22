@@ -6,6 +6,10 @@ __pycache__
 db.sqlite3
 media
 
+# Private keys # 
+private_secret_key.txt
+email_info.txt
+
 # Backup files # 
 *.bak 
 
