@@ -171,17 +171,24 @@ tuition&nbsp;</h1>
             <div class="col-lg-8 ms-auto me-auto py-3"> 
                 <h2 class="fw-bold text-uppercase">Send Us A message</h2> 
                 <p class="mb-5 text-white">     Ask us anything or just say hi.....</p>
-                <form> 
-                    <div class="mb-3"> 
+                <form method="post">
+                    {% csrf_token %} 
+                    {{ form.as_p }}
+                    <input type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase" value="Submit">
+
+                    <!-- <div class="mb-3"> 
+                        <label for="name"></label>
                         <input type="text" class="border border-0 form-control rounded-0" placeholder="Enter name..."> 
                     </div>                     
                     <div class="mb-3"> 
+                        <label for="email"></label>
                         <input type="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."> 
                     </div>                     
                     <div class="mb-3"> 
+                        <label for="message"></label>
                         <textarea class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
                     </div>                     
-                    <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>                     
+                    <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>                      -->
                 </form>                 
             </div>             
         </div>         

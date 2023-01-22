@@ -12,4 +12,5 @@ urlpatterns = [
     path('alevel/', views.alevel, name='alevel'),
     path('step/', views.step, name='step'),
     path('programming/', views.programming, name='programming'),
+    path('success/', views.success, name='success'),
 ]

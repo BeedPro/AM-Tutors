@@ -16,6 +16,9 @@
     font-family: Syne, sans-serif;
 }
 
+
+
+
 /* main > .container {
     padding: 60px 15px 0;
   } */
@@ -37,7 +40,7 @@
 }
 
 .text-on-dark{
-    color: var(--font-on-dark);
+    color: var(--font-on-dark) !important;
 }
 
 .container-pad{
