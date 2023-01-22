@@ -15,7 +15,6 @@ def home(request):
             pass
     return render(request, 'home.html', {"title": "Home page", 'form': form, 'is_home_page': is_home_page})
 
-
 def about(request):
     return render(request, "about.html", {"title": "About Us"})
 
@@ -27,9 +26,6 @@ def reviews(request):
 
 def pricing(request):
     return render(request, "pricing.html", {"title": "Pricing"})
-
-def contacts1(request):
-    return render(request, "contacts.html", {"title" : "Contacts"})
 
 def contacts(request):
     form = ContactForm()
