@@ -1,9 +1,22 @@
-from django.shortcuts import render
-from django.shortcuts import render
+from django.http import BadHeaderError, HttpResponse
+from django.shortcuts import render, redirect
 from .forms import ContactForm
-
+from django.core.mail import send_mail
 # Create your views here.
+# Think of this as controllers in ASP.NET
 
+def send_email(name, email, message):
+    try:
+        send_mail(
+            'Contact Us Email',
+            f'Here is the message. {message}',
+            f'{email}',
+            ['annoor.tutor@outlook.com'],
+            fail_silently=False
+            )
+    except BadHeaderError:
+        return HttpResponse('Invalid header found.')
+    return redirect('success')
 
 
 def home(request):
