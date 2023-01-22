@@ -33,13 +33,12 @@ ALLOWED_HOSTS = []
 
 with open('email_info.txt') as f:
     data = f.readlines()
-    print(data)
-    EMAIL_BACKEND = data[0]
-    EMAIL_HOST = data[1]
-    EMAIL_PORT = int(data[2])
-    EMAIL_USE_TLS = bool(data[3])
-    EMAIL_HOST_USER = data[4]
-    EMAIL_HOST_PASSWORD = data[5]
+    EMAIL_BACKEND = data[0].strip()
+    EMAIL_HOST = data[1].strip()
+    EMAIL_PORT = int(data[2].strip())
+    EMAIL_USE_TLS = bool(data[3].strip())
+    EMAIL_HOST_USER = data[4].strip()
+    EMAIL_HOST_PASSWORD = data[5].strip()
 
 # EMAIL BACKEND
 # EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
